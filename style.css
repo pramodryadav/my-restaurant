@@ -1,0 +1,388 @@
+:root {
+    --primary-color: #ff5722;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e4ebea;
+}
+
+nav {
+    background-color: #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.7em;
+    text-align: center;
+}
+
+.nav-logo {
+    margin-right: 1em;
+}
+
+.nav-logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+
+}
+
+.nav-links a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #3d3d3d;
+    transition: color 0.3s ease-out;
+    position: relative;
+
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: var(--primary-color);
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom right;
+
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.login a {
+    color: #fff;
+    padding: 12px 30px;
+    margin: 0 10px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: all 0.25s ease-in;
+}
+
+.login a:hover {
+    background-color: #e45c32;
+
+}
+
+.offer-section {
+
+    padding: 2em;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/offer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.offercheckout-btn {
+    background-color: var(--primary-color);
+    align-self: flex-end;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.25s ease-in;
+
+}
+
+.offercheckout-btn:hover {
+    transform: translateY(-5px);
+    background-color: #e45c32;
+}
+
+.menu-section {
+    padding: 60px 20px;
+
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.menu-section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+
+}
+
+.menu-category {
+    margin: 10px 30px 50px 30px;
+    background-color: #eee;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.view-all-btn {
+    background-color: #222;
+    padding: 7px 14px;
+    margin-right: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: bcakground-color 0.25s ease-in;
+}
+
+.view-all-btn:hover {
+    background-color: #444;
+}
+
+.menu-category h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #e63946;
+    padding-left: 10px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+.menu-card:hover {
+    cursor: pointer;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+.menu-card-content {
+    padding: 15px;
+}
+
+.menu-card-content h4 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #e63946;
+}
+
+.menu-card-content p {
+    font-size: .95rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.menu-card-content span {
+    font-weight: bold;
+    color: #666;
+}
+
+.cta-button {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+
+
+.flexbox {
+    height: 100px;
+    background-color: rgb(56, 56, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.footer {
+    padding: 40px 20px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin: 20px 10px;
+}
+
+.footer-section h3 {
+    color: #e63946;
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.footer-logo li {
+    margin-bottom: 10px;
+}
+
+.footer-logo li a {
+    text-decoration: none;
+    color: white
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    flex: 1 1 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.subscribe-from button {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+
+}
+
+.item {
+    border: 1px solid white;
+    background-color: pink;
+}
+
+.grid {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 200px;
+    grid-template-rows: 100px 100px 200px 100px;
+}
+
+.item {
+    border: 1px solid white;
+    background-color: aqua;
+}
+
+.item-1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-start: 4;
+}
+
+/* shortcut */
+.item-2 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+
+}
+
+
+
+/* row-start / column-start / row-end /column-end */
+.item-3 {
+    grid-area: 1 / 4 / 3 / 5;
+
+}
