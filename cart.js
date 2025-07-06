@@ -14,7 +14,7 @@ getCartItems()
 
 
 function populateItems(items) {
-    let innerHTML = items.map((item) => createCartItem(item)).join("");
+    let innerHTML = items.length> 0 ? items.map((item) => createCartItem(item)).join("") : null;
     containerEle.innerHTML = innerHTML;
     calclateTotal(items);
     updateCart()
