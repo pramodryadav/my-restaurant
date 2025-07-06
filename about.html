@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="orderstyle.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="https://placehold.co/200x80?text=ShopLogo"
+            alt="shop-logo"
+            class="shop-logo"
+          />
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourmenu.html">Our Menu</a></li>
+            <li><a href="#offers">Our Offers</a></li>
+            <li><a href="aboutus.html">Know us More</a></li>
+            <li><a href="order.html">Your Order</a></li>
+            <li><a href="cart.html">Cart (0)</a></li>
+          </ul>
+          <div class="login">
+            <a href="login.html">Login/signup</a>
+          </div>
+        </div>
+        <div class="right-hamburger">
+          <img src="image.png" alt="hamburger" height="50px" width="50px" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Order Section -->
+    <section class="order-section">
+      <h1 class="order-title">Your Order</h1>
+
+      <!-- Table -->
+      <table class="order-table">
+        <thead class="order-table-head">
+          <tr>
+            <th class="order-table-head-cell">Order No.</th>
+            <th class="order-table-head-cell">Order details</th>
+
+            <th class="order-table-head-cell">Total Price</th>
+            <th class="order-table-head-cell">Status</th>
+          </tr>
+        </thead>
+        <tbody id="order-table-body">
+          <!-- If you want to dynamically add table rows instead -->
+        </tbody>
+      </table>
+
+      <!-- Order Cards -->
+      <div id="order-cards" class="order-cards-container">
+        <!-- Order cards will be dynamically added here -->
+      </div>
+    </section>
+      </body>
+</html>
